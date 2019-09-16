@@ -2,6 +2,27 @@
 <html>
 <head>
 <style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+img{
+  max-width:100%;
+  max-height:100%
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -74,22 +95,34 @@ body {
 </head>
 <body>
 
-<h2>CSS Template using Grid</h2>
-<p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect.</p>
-<p><strong>Note:</strong> The Grid Layout Module is not supported in Internet Explorer or Edge 15 eand earlier versions.</p>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="#news">Vineyards</a></li>
+  <li><a href="#contact">Parks</a></li>
+</ul>
+
+<h2>Explore Winona</h2>
+<p>Welcome to Winona, MN where we have many things to offer, see below for more!</p>
+<p>Below are previews of what we have, for specific examples and .</p>
 
 <div class="grid-container">
   <div class="header">
-    <h2>Header</h2>
+    <h2>Explore Winona</h2>
   </div>
   
-  <div class="left" style="background-color:#aaa;">Column</div>
-  <div class="middle" style="background-color:#bbb;">Column</div>  
-  <div class="right" style="background-color:#ccc;">Column</div>
+  <div class="left" style="background-color:#aaa;">General Info
+  <br><img src="https://www.exploreminnesota.com/memberimage.ashx?id=11200&width=800&mar=1">
+  </div>
+  <div class="middle" style="background-color:#bbb;">Vineyards
+  <br><img src="https://weddingspot-prod-s3-1.s3.amazonaws.com/__sized__/images/venues/6801/Elmaro-Vineyard-Trempealeau-WI-0d47c622-9be8-4bad-a9d9-7fabcbf5bcbd-97450e389c42885476f1fbe9bc5bca5a.jpg">
+  </div>  
+  <div class="right" style="background-color:#ccc;">Parks
+  <br><img src="https://s3.amazonaws.com/visitwinona/wp-content/uploads/2017/01/17053049/IMG_9807-1024x683.jpg">
+  </div>
   
   <div class="footer">
-  <p>Footer</p>
+  <p>Educational purposes only</p>
   </div>
 </div>
 
